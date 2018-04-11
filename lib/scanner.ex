@@ -1,0 +1,2 @@
+defmodule Scanner do
+end

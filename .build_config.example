@@ -1,0 +1,6 @@
+export MIX_TARGET=rpi0
+export NERVES_NETWORK_SSID=your_wifi_ssid
+export NERVES_NETWORK_PSK=your_wifi_password
+export WUNDERLIST_ACCESS_KEY=your_key
+export WUNDERLIST_CLIENT_ID=your_client_id
+export UPCDATABASE_ACCESS_KEY=your_key
