@@ -2,6 +2,10 @@
 
 **TODO: Add description**
 
+## Connecting
+
+SSH into the Pi and then run `'Elixir.IEx':start().`
+
 ## Targets
 
 Nerves applications produce images for hardware targets based on the

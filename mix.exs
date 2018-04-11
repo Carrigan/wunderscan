@@ -44,7 +44,12 @@ defmodule Scanner.MixProject do
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
-    [{:nerves, "~> 0.9", runtime: false}] ++ deps(@target)
+    [
+      {:nerves, "~> 0.9", runtime: false},
+      {:nerves_uart, "~> 1.2"},
+      {:nerves_init_gadget, "~> 0.2"},
+      {:ring_logger, "~> 0.4"}
+    ] ++ deps(@target)
   end
 
   # Specify target specific dependencies

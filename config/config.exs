@@ -1,7 +1,10 @@
 use Mix.Config
 
+config :logger, backends: [RingLogger]
+config :logger, RingLogger, max_size: 200
+
 config :shoehorn,
-  init: [:nerves_runtime],
+  init: [:nerves_runtime, :nerves_init_gadget],
   app: Mix.Project.config()[:app]
 
 key_mgmt = System.get_env("NERVES_NETWORK_KEY_MGMT") || "WPA-PSK"
