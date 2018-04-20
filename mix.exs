@@ -48,7 +48,9 @@ defmodule Scanner.MixProject do
       {:nerves, "~> 0.9", runtime: false},
       {:nerves_uart, "~> 1.2"},
       {:nerves_init_gadget, "~> 0.2"},
-      {:ring_logger, "~> 0.4"}
+      {:ring_logger, "~> 0.4"},
+      {:httpoison, "~> 1.0"},
+      {:poison, "~> 3.1"}
     ] ++ deps(@target)
   end
 

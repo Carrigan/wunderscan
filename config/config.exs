@@ -25,7 +25,8 @@ config :nerves_init_gadget,
 config :scanner,
   wunderlist_access_key: System.get_env("WUNDERLIST_ACCESS_KEY"),
   wunderlist_client_id: System.get_env("WUNDERLIST_CLIENT_ID"),
-  upcdatabase_access_jey: System.get_env("UPCDATABASE_ACCESS_KEY")
+  upcdatabase_access_key: System.get_env("UPCDATABASE_ACCESS_KEY"),
+  list_name: "Scanned Groceries"
 
 config :nerves_firmware_ssh,
   authorized_keys: [File.read!(Path.join(System.user_home!, ".ssh/id_rsa.pub"))]

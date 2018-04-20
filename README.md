@@ -1,33 +1,20 @@
-# Scanner
+# Wunderscan
 
-**TODO: Add description**
+This repository is for a Wunderlist-connected scanner for adding spices or snacks that you have run out of to your shopping list.
 
-## Connecting
+## Building this Project
 
-SSH into the Pi and then run `'Elixir.IEx':start().`
+1. Copy the `.build_config.example` file as `.build_config` and replace the variables with your keys and info.
+1. Run the `mix firmware` command to build the project.
 
-## Targets
+## Using SSH With Nerves
 
-Nerves applications produce images for hardware targets based on the
-`MIX_TARGET` environment variable. If `MIX_TARGET` is unset, `mix` builds an
-image that runs on the host (e.g., your laptop). This is useful for executing
-logic tests, running utilities, and debugging. Other targets are represented by
-a short name like `rpi3` that maps to a Nerves system image for that platform.
-All of this logic is in the generated `mix.exs` and may be customized. For more
-information about targets see:
+1. SSH into the Pi using `ssh <ip> -p 8989`.
+1. In the Erlang terminal, run the command `'Elixir.IEx':start().` to use Elixir's IEx.
 
-https://hexdocs.pm/nerves/targets.html#content
+## Official Nerves Resources
 
-## Getting Started
-
-To start your Nerves app:
-  * `export MIX_TARGET=my_target` or prefix every command with
-    `MIX_TARGET=my_target`. For example, `MIX_TARGET=rpi3`
-  * Install dependencies with `mix deps.get`
-  * Create firmware with `mix firmware`
-  * Burn to an SD card with `mix firmware.burn`
-
-## Learn more
+If you get stuck on any Nerves-related issues, the following resources are available:
 
   * Official docs: https://hexdocs.pm/nerves/getting-started.html
   * Official website: http://www.nerves-project.org/
