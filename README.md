@@ -1,5 +1,7 @@
 # Wunderscan
 
+![](scanner.jpg)
+
 This repository is for a Wunderlist-connected scanner for adding spices or snacks that you have run out of to your shopping list.
 
 ## Building this Project
